@@ -1,0 +1,28 @@
+{
+"registerUser": {
+  "name": "Navya",
+  "email": "navya11@gmail.com",
+  "password": "123456",
+  "firstName": "Navya",
+  "lastName": "Mandala",
+  "address": "Hyderabad",
+  "state": "Telangana",
+  "city": "Hyderabad",
+  "zipcode": "500001",
+  "mobile": "9876543210"
+
+},
+
+  "loginUser": {
+    "email": "navya11@gmail.com",
+    "password": "123456",
+    "username": "Navya"
+  },
+
+  "invalidUser": {
+    "email": "wrong@gmail.com",
+    "password": "wrong123"
+  }
+
+
+}
