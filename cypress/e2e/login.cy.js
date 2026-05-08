@@ -1,8 +1,5 @@
 import LoginPage from "../pages/loginPage";
 import HomePage from "../pages/homePage";
-
-
-
 describe('User Login', () => {
     const homePage = new HomePage();
     const loginPage = new LoginPage();  
@@ -10,7 +7,6 @@ describe('User Login', () => {
         cy.fixture('userData').then((data) => {
             this.userData = data;
         });
-
         homePage.visit();
         homePage.clickSignupLogin();
     });

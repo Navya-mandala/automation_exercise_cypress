@@ -1,28 +1,31 @@
 {
-"registerUser": {
-  "name": "Navya",
-  "email": "navya11@gmail.com",
-  "password": "123456",
-  "firstName": "Navya",
-  "lastName": "Mandala",
-  "address": "Hyderabad",
-  "state": "Telangana",
-  "city": "Hyderabad",
-  "zipcode": "500001",
-  "mobile": "9876543210"
-
-},
-
+  "registerUser": {
+    "name": "Navya",
+    "email": "navya100000@test.com",
+    "password": "Test@123",
+    "firstName": "Navya",
+    "lastName": "Mandala",
+    "address": "Hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "zipcode": "500001",
+    "mobile": "9876543210"
+    },
   "loginUser": {
     "email": "navya11@gmail.com",
     "password": "123456",
     "username": "Navya"
   },
-
   "invalidUser": {
     "email": "wrong@gmail.com",
     "password": "wrong123"
-  }
-
+  },
+  "product": {
+    "removeItem": "Blue Top",
+    "searchItem": "Dress",
+    "womenCategory": "Women - Dress Products",
+    "menCategory": "Men - Tshirts Products"
+  }, 
+  "products_morethan_one": ["Blue Top", "Men Tshirt"]
 
 }

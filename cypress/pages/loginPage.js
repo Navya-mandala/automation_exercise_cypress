@@ -8,6 +8,10 @@ class LoginPage {
         cy.contains('Your email or password is incorrect!').should('be.visible');
      }
 
+     verifyLoginSucessfull(username){
+        cy.contains(`Logged in as ${username}`).should('be.visible')
+     }
+
 }
 export default LoginPage;
 

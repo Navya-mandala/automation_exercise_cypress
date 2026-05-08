@@ -1,12 +1,17 @@
 class SignupPage {
 
 
-
     fillSignupForm(name, email) {
+
         cy.get('input[data-qa="signup-name"]').type(name);
+
         cy.get('input[data-qa="signup-email"]').type(email);
+
         cy.get('button[data-qa="signup-button"]').click();
+
+       
     }
+
 
 
     fillAccountDetails(password, firstName, lastName, address, state, city, zipcode, mobile) {
@@ -22,7 +27,7 @@ class SignupPage {
         cy.get('button[data-qa="create-account"]').click();
     }
 
-verifyAccountCreation() {
+   verifyAccountCreation() {
     cy.contains('Account Created!').should('be.visible');
    cy.get('a[data-qa="continue-button"]').click();
   }
@@ -31,7 +36,25 @@ verifyAccountCreation() {
   logout() {
     cy.contains('Logout').click();
   }
+  verifyNewUserSignup(name) {
+    cy.contains(`Logged in as ${name}`).should('be.visible');
+  }
 
+
+
+  accountDelete() {
+    cy.contains('Delete Account').click();
+  }
+
+  verifyAccountDeleted() {
+    cy.contains('Account Deleted!').should('be.visible');
+  }
+
+EmailAddressalreadyexist(){
+   cy.contains('Email Address already exist!')
+     .should('be.visible');
+
+}
 
 
 }
