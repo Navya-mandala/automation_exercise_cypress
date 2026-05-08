@@ -18,24 +18,22 @@ Cypress automation framework for testing the Automation Exercise website.
 - Assertions
 - UI validations
 
-## Project Structure
-
-cypress/
-├── e2e/
-├── fixtures/
-├── support/
-└── screenshots/
-
 ## Installation
 
 Install dependencies:
 
+```bash
 npm install
+```
 
 Run tests:
 
+```bash
 npx cypress open
+```
 
 Run in headless mode:
 
+```bash
 npx cypress run
+```
